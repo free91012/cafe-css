@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Boxicons  -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- scroll top -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+    <!-- header -->
+
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">は・な</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">ホーム</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">は・なについて</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">サービス</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">メニュー</a></li>
+                    <li class="nav__item"><a href="#position" class="nav__link">ポジション</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+            <div class="home__data">
+                <h1 class="home__title">カフェ は・な</h1>
+                <h2 class="home__subtitle">幸せとは <br> 美味しいケーキを食べる時</h2>
+               
+            </div>
+
+            <img src="./img/header.png" alt="" class="home__img">
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about section bd-container" id="about">
+        <div class="about__container  bd-grid">
+            <div class="about__data">
+                <span class="section-subtitle about__initial">は・なについて</span>
+                <h2 class="section-title about__initial">花屋であれ <br> カフェであれ</h2>
+                <p class="about__description">花に囲まれていてケーキを食べられます</p>
+               
+            </div>
+
+            <img src="./img/about.jpg" alt="" class="about__img">
+        </div>
+    </section>
+
+    <!-- service -->
+    <section class="services section bd-container" id="services">
+        <span class="section-subtitle">サービス</span>
+        <h2 class="section-title">は・なは⋯⋯</h2>
+
+        <div class="services__container  bd-grid">
+            <div class="services__content">
+                <img class="services__img" src="data:image/png;base64,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"/>
+                
+                <p class="services__description">豊かな花の香りに包まれながら、ゆっくり時間を過ごして。畑のうねをイメージして並べられたガラステーブルの下には元気なグリーンが植わっていてじかに触れ合える。</p>
+            </div>
+
+            <div class="services__content">
+                
+                <img class="services__img"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAACoCAYAAAB0S6W0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAqKADAAQAAAABAAAAqAAAAABxjB3WAAAN20lEQVR4Ae2de4wdVR3Hz5m5e7dbaIsI2se+d28fu91uJRUUJZFiVWIEDAoaYzQotA2IIiiNgfgHviJFoSqER0UT1IiPYND6QMCoKY8U7Hb37m737vvRra2mSAv7unOOv3Pby+6S7XbnnJm5M3e+k9zcuTPn8ft9ft85Z2buzDmMYQEBEAABEAABEAABEAABEAABEAABEAABEAABEAABEAABEAABEAABEAABEAABEAABEAABEACBMBDgYTAiajZkBtqkjs2pqvXg7RKc5TI9koNAoAQg0EBxozK3BCBQt8SQPlACEGiguFGZWwIQqFtiSB8oAQg0UNyozC0BCNQtMaQPlAAEGihuVOaWAATqlhjSB0oAAg0UNypzSwACdUsM6QMlAIEGihuVuSUAgbolhvSBEoBAA8WNytwSgEDdEkP6QAlAoIHiRmVuCUCgbokhfaAEINBAcaMytwQgULfEkD5QAhBooLhRmVsCgb/ElU6nk4kl7CJLss2My9Vk8Eop+QrO5EpaX+LWAaT3hcBxyfghzuUolX6ISd4lOHsme5y90NjYOOlLjacpNDCBHuxta7ZtuZ0cv4Zsectp7MHmcBM4Rg3J447DH1hTu74lCFN9F2jPcMdq4TjfIGc+Rh/f6wsCGupg6rXrX1u2fUdd+bouP3n4Jpihob1l42LJnaTJ28iBEj+dQNkFIzDFmNy5yDp+V0XFxWN+WOGLQDMD6QYy/FdkMH1jiQGBdmqIPp6qaqRvbxfPBdozkH6vYPIPZOZSb01FaSEn8KrF+Ifrqhr/6aWdngpUXQhZNvsHGYircS+jFJ2yjguHXeLlBZRnAs2Mvnw+m0ruo9PnyujwhKWeE+BskJVMbkqtuOCoF2V7cqNeSmmxydKfQZxehCTiZagGirSQ04QHrngi0O7B9M10UbTFA3tQRFEQkFtOasLcGeMuvre3vcqxhbp6W2xuDkooIgKv247VUFvbMGDik3EL6tjOd8kAiNMkCsWZd/EpbRh5Z9SC9g61bnAE308WGJVj5AEyh5mAtC25sbai6YCukUYtaFbwL1PFEKcu/eLPx09pRNtTbXFlMpmlLDl5mC6OyrRrR8YYEOBjbDK5PJVKvarjrHYLykvHL4c4dZDHLY8sO6kVPb+1BUrPcF6mVyVyxY2AiVa0BUqnnhfEDTT81SWgrxUDgcpaXXORL24E9LViIFB2Ttwww19tAtpaMRGo9h0AbTeRMaoEtLViItCowoLdESIAgUYoWHE0FQKNY9Qj5DMEGqFgxdFUCDSOUY+QzxBohIIVR1Mh0DhGPUI+Q6ARClYcTYVA4xj1CPkMgUYoWHE0FQKNY9Qj5DMEGqFgxdFUCDSOUY+QzxBohIIVR1Mh0DhGPUI+Q6ARClYcTYVA4xj1CPkMgUYoWHE0FQKNY9Qj5DMEGqFgxdFUCDSOUY+QzwltWydLl8mS8VWM26ssJuhblkthqe9VNKhDDQ2L00hlF9kBIB3GeRuNJN1PnxFmyREu+TBnfCQrnBE5kRwpKTlhiUTZKpljQjyELLc4p9+KC6ulj5r5RPstR8obxkWQS2mKeR/NSjfCLTFC38OCWfTtjPCpRSO6RvsGqre39e3C5leQ4VdScNQwOYt0jSxsPhr8ismnJOdP8JKJ35uOvd7e374iweUVNM3glSTyzeRbaWH90659nA7Mp2mo7ydsIZ+srW36t3ZJ82T0TaAz60wPpc9NCnYDbbuJgq1akigsA9Ra7rKmxnbX1W36nx8Gdwx3vDUhslupFb6Jpm5b4UcdPpQ5TLb+oJSJh6uqNhzzofxZRQYi0HyNudnn5JJbqPnfQdvCOlXNMRLMN+VU8oc0ZOBE3nY/vw8d2rf4xOSiWzlnX6V6zvazLoOyafhE/u2EWHxvTU3NuEE5rrIGKtC8ZaqbK7HETuriPknbCmJD3pYZ34JazEdFIrFjzco1/5mxPbDVzsHOlZbI3kNC/URglZ65Imow+WO2I77iVzc+nwkFFUdmsPUD1Jo+RAZWzWdkAPsyklufX13Z8PcA6jpjFd1D6Q/Rud2DdAAXeM4p3kdXudfT7HFPn9FonxJQ/YVbUpVNf6E5dTZQG/rzwlnBHj6rZHxjWMSpONRXNP7JmhrfwCX7RaG4ULP5U2fMbi6kOJXvBW1BZ8LvGmzdRud+99G25Mzt/q2rq3NxQ6qq6TH/6jAvmXqZ7dTL3EslBcSFTTApb0xVN+02t968hNAIVLnS3d92qeTst7SqPVzfApEckRa/YnVF4wsLTF/QZAFy+S9NCHuV1xPCmsALlUCVIz3DHauF4yiRqhv9Piz8JdvhV5tOMOWDYfMW6TsXzlroFuDVdNrVM68hAe8s6DnoXL7Wla/rer3UuYi6tQdoP50KebYIurF8N8048Z6oiVMRmObC7qefnnKh0r6fcM56V9jEqfwOXQuqjMovmb7W9zErJ9S1+W2a3/upS98WlS79TD6e4qKEuu5Maefdr1pNIbanqjc8N2+6Au4MXQs6k0Wqpulvkyd4M/1V+iU6lAZn7lvgerdkfFt9ZfumYhGn8vsUl405LowNLJDFdDLJuqg32TpccXRTmMWpDA51CzpNlPo0+bjd3b/+ncwSND8Ta6A+bjkZr/4eXE4feliBHabfhyloozTtSZvFxZ66yqaXOf3pTfuKdlHTXnf3d1z4Ji6KifoQDjZKYR5VXCxLttEDPXvqqxr2R4WLtkAzA23HCYASBTnPaMY5nra43FNb0fgSOa8EU7RL7mAZWHsht6zLpcx1s/kDRYnCoVZ7lI6LUaIwKpUoHGtPqrqhJSqi0A2cOli6hts3WYJRIyIbSRcrSB+5gyVVtV7rr20TgZ6uZeqldvke6j4eupRfmtV1Noz50ul0MrlE3kit0i1kX4VLGzsp3z31Ve2Pcn6N4zJvqJPv27ev5JzzyrbSo5a3kiiq5zKWBKqlNa1MygBqQU8n0FP28VYuxbb66qa9cxkctW3d/enNdBvgfs7kGkPb/0UXbNuL5Zz44GD6EktKdcdl3tuCIRRoLoyCWo37EvKsr9UE+ASMoYBmZU8fSZ9dOiZ2Urd9A+3QPqBnFUrnzPR86ff4RPKOoJ6YelP9xj/Vk2kTYtl36Nz2CwvhoitQv6/i6Y8JdkvWeu25zv6WGmMqARdwsO/A2uSYfJHEuXUhQXBhHp2uy9tYcnxvR19HtYt8oUhKD7PUjzlLnydx3kwGeXXQzumb3wLNV7rR5vaL3f2tF+c3hP27ZyB9mWXZz5OdZvca53WUX5Dg4sVM/4F3z5ssRDtVly6FfIEeCdwQhFlBCVT5ch51a093DaY/G4RjJnVk+ttupHOTP9KV6DKTchaUl8vzGbee6R5o+8yC0hcwEdl4PZ1vPkUmnBuUGdrN85kvkuZxgfMfv57M3ty8vPm1eVIFvqunZ98yeuHtQRLmtYFXrirkfDdx+WLYuHR2di6xy5wfEZdP63IJ6zno3P5Ied3iCbsl95fd3CkC30pX6ZeLxKLWgolTeSzl58LGpWug/f2JsuwBE3GaBLMwLei0xXSeLX/CSqduN31bcrpId2sHh/av4k5iZ+hesyAuPCt21Nc3H3HnkTep+/rSy7MWu5uE+SkqUVsneWt0W1Dtio26+LzV09+v0L8Q36L3p3cFddslIi+qBc5lxouNt1N4lk6HyGwt6gI96T09EMIF38WdsUfwqu8sQQzRbaldtsw+UlPzjldm7fHoh9+vhheHQN+AfXKwBOr+f0fd/5Om3X/xDJaQ4/JX4vKEF1xUN+5Y8iN0x+IqerpJDa5R+kYIPF4pMoHOpGM63IysoVMo9Tec9unMTGtCtC7oQZU2Onfuo3/r8sPwjKjhZqTIDqtheGzb5ieHJ2LldCsrN0TRqeGJyuncUnFRw/AEcquxiAUaIknAFG0CugIN5OjR9goZY08AAo29BMINAAINd3xibx0EGnsJhBsABBru+MTeOgg09hIINwAINNzxib11EGjsJRBuABBouOMTe+sg0NhLINwAINBwxyf21kGgsZdAuAFAoOGOT+ytg0BjL4FwA4BAwx2f2FsHgcZeAuEGAIGGOz6xtw4Cjb0Ewg0AAg13fGJvHQQaewmEGwAEGu74xN46A4Gqd7SxgMBCCOhrxUCgsnchpiENCNA7+NpaMRAoK4qx5yGfQAhoa0VfoJz9JhDXUEn0CRhoRXs4GDUnTmawvd2DWS+iHwB4cFoCNL7/wVRlQ4Pu3FnaLaiqkGZz+/ppLcMOECACSiO64lQAtVtQlZlaUd492P5nWtuifmMBgdkE+FP1lQ0fNJlhT7sFVYbkKraz19HU2UdnG4ZfsSegNEHaMBGnYmgkUFVAqrx5mElxDa1Oqt9YQIAITCpN5LRhiMNYoKp+NT20Ja2P0mqoZu0wZIPsegReU1pQmtDLPjuXJwJVRdZVN+wRQmyiVe17XrNNw68IEtirNKC04JXtRhdJcxmRu/00lL6WZmm/i/bXzZUG24qOQI/k7M5UReMvTa7Y56LiuUDzlTwrn02UD75tDQ1T3UwTUzbT1MjNtE991PzhWKJL4DCZ3kLCaaEZcVtoCPKW4cojB4tt6vXohgeWgwAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIgAAIFDOB/wM0LwVaiXNPBAAAAABJRU5ErkJggg=="/>
+              
+                <p class="services__description">「花かんむりのフレンチトースト」は、ぜひ味わってみたい人気メニュー。旬のフルーツや食べられるエディブルフラワーで華やかに盛り付けられ、見ているだけで気分が上がる。</p>
+            </div>
+
+            <div class="services__content">
+                <img class="services__img"  src="data:image/png;base64,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"/>
+               
+                <p class="services__description">暑い日に外を歩いていると、渇いたのどを潤してくれる冷たいドリンクが恋しくなりますね。喫茶店やカフェでいただくレトロなクリームソーダや、歩きながら飲めるさっぱり爽やかなレモネードなど、思わず写真に撮りたくなる「おしゃれなアイスドリンク」を楽しんでみませんか？</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- menu -->
+    <section class="menu section bd-container" id="menu">
+        <span class="section-subtitle">メニュー</span>
+        <h2 class="section-title">スペシャル</h2>
+
+        <div class="menu__container bd-grid">
+            <div class="menu__content">
+                <img src="./img/item1.jpg" alt="" class="menu__img">
+                <h3 class="menu__name">マフィン</h3>
+                <span class="menu__detail">パンもしくは焼き菓子の種類であり</span>
+                <span class="menu__preci">3800円 (税込)</span>
+
+            </div>
+
+            <div class="menu__content">
+                <img src="./img/item2.jpg" alt="" class="menu__img">
+                <h3 class="menu__name">フルーツタワー</h3>
+                <span class="menu__detail">豪華にいちご4パックを使った</span>
+                <span class="menu__preci">1,200円 (税込)</span>
+
+            </div>
+            
+            <div class="menu__content">
+                <img src="./img/item3.jpg" alt="" class="menu__img">
+                <h3 class="menu__name">チョコケーキ</h3>
+                <span class="menu__detail">冷やすと生チョコみたいな食感に</span>
+                <span class="menu__preci">3,450円 (税込)</span>
+
+            </div>
+       
+        </div>
+    </section>
+    <!-- position -->
+    <section class="position section bd-container" id="position">
+        <div class="position__container bd-grid">
+            <div class="position__data">
+                <span class="section-subtitle position__initial">ポジション</span>
+                <h2 class="section-title position__initial">お待ちしております</h2>
+                <p class="position__description">住所：東京都調布市布田2-32<br> 電話番号：012-000-000<br>営業時間：15:00～翌1:00<br>定休日：火曜日<br>アクセス：京王線 調布駅から315m </p>
+            </div>
+
+            <div >
+                <iframe class="position__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.200561530257!2d120.95211461536718!3d24.23476308435288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468e343d7fada35%3A0xf2aac2b88a500acc!2z6bO25Zi05bGx5q2l6YGT55m75bGx5Y-j!5e0!3m2!1szh-TW!2stw!4v1624953940418!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+    <!-- footer -->
+    <footer class="footer section bd-container">
+    
+
+        <p class="footer__copy">&#169; 2021 bonnie</p>
+    </footer>
+
+    
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- main.js -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
